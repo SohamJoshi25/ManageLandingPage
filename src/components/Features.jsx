@@ -19,12 +19,12 @@ const features = [
 
 function Features() {
   return (
-    <div className=' mx-auto mt-20 container flex flex-row  space-x-20 w-3/4 p-4 text-left'>
-        <div className="flex  flex-col space-y-12 w-1/2 p-4">
+    <div className=' mx-auto mt-20 flex flex-col md:flex-row justify-center items-center md:items-start  md:space-x-20 md:w-3/4 p-4 text-center md:text-left'>
+        <div className="flex  flex-col space-y-12 md:w-1/2 p-4">
             <h2 className='text-5xl font-bold text-indigo-950'>Whats different about manage?</h2>
             <p className='text-xl font-light text-slate-450'>Manage provides all the functionality your team needs without the complexity our software is a tailor made for modern digital product teams.</p>
         </div>
-        <div className='flex flex-col w-1/2 p-4'>
+        <div className='flex flex-col md:w-1/2 p-4'>
             {
                 features.map((e,i)=>{
                     return (<FeatureCard title={e.title} text={e.text} itr={i+1}/>)

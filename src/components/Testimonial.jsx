@@ -19,16 +19,16 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="mt-8 container flex flex-col space-y-16 justify-center p-10 mb-24 items-center ">
+    <div className="mt-8  flex flex-col space-y-16 justify-center p-10 mb-24 items-center ">
       <h1 className='text-3xl font-semibold text-indigo-950'>What they've said</h1>
-      <div className='flex flex-row mb-10 px-6 items-center space-x-20 justify-around'>
+      <div className='flex flex-col md:flex-row mb-10 px-6 items-center space-y-10  md:space-y-0 md:space-x-20 justify-around'>
             {
               testimonials.map((o)=>{
                 return (<TestimonialCard href={o.img} name={o.name} text={o.text}/>)
               })
             }
       </div>
-      <button className='bg-orange-500 text-white rounded-full px-4 mx-4 h-10 shadow-lg'>Get Started</button>
+      <button className='bg-orange-500 text-white rounded-full px-4 mx-4 h-10 shadow-lg  hover:bg-orange-600'>Get Started</button>
     </div>
   )
 }
